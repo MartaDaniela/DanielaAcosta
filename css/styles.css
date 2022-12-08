@@ -347,15 +347,15 @@ p{
 /* Lottie Section */
 #lottie{
     /* padding: 100px; to take up more of screen*/
-        padding: 2% 15% 0% 15%;
+        padding: 5% 15% 0% 15%;
         text-align: left;
-        position: relative; top: -100px;
+
     }
 
 /* Projects Section */
 #projects{
 /* padding: 100px; to take up more of screen*/
-    padding: 0% 15%;
+    padding: 4% 15%;
     text-align: left;
     background-color: #fff;
     position: relative; top: -60px;
