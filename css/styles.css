@@ -62,7 +62,7 @@
 }
 
 #project-title{
-    padding: 2% 10%;
+    padding: 2% 15%;
     text-align: left;
 }
 
@@ -146,7 +146,9 @@
 
 #navigation{
     background-color: #fff;
-    padding: 2% 10%;
+    padding: 3% 10%;
+   
+   
 }
 
 
@@ -225,27 +227,14 @@ p{
     letter-spacing: 0.0125em;
 }
 
-/* Navigation Bar */
+/* left aligned Navigation Bar */
 
-.navbar-toggle {
-    float: left !important;
-    margin-left: 15px;
-}
-  
 .navbar-header.navbar-right.pull-right {
     margin-right: 15px;
 }
   
 .navbar-right > li {
     float: left;
-}
-  
-.nav-link{
-    padding:10px 20px 10px 20px;
-    color:#000;
-    font-family: 'Poppins';
-    font-size: 20px;
-    letter-spacing: 0.05em;
 }
 .nav-bar-link{
     padding:10px 10px 10px 5px;
@@ -265,14 +254,57 @@ p{
     font-size: 22px;
     letter-spacing: 0.05em;
 }
-.navbar-brand img{
+.navbar-brand2 img{
     transform: rotate(1deg);
-    height: 80px;
-    width: 135px;
-    padding-top: -100px;
+    text-align: left;
+    width: 50%;
+    height:50%;
+
 }
 
 
+/* Centered Navigation Bar */
+.nav-link{
+    padding:10px 10px 10px 5px;
+    color:#000;
+    font-family: 'Poppins';
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+  
+
+.nav-link:hover{
+    padding:10px 5px 10px 5px;
+    background-color: #8cc6dd;
+    border-radius: 10px;
+    color:#000;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 22px;
+    letter-spacing: 0.05em;
+}
+
+.navbar-brand img{
+    transform: rotate(1deg);
+    text-align: center;
+   
+
+}
+.navbar-toggler{
+    color: white;
+    width: 55px;
+    height:40px;
+    background-color: white;
+
+    
+}
+.tiny{
+    width:30px;
+    height:30px;
+}
+.d-lg-block{
+    padding: 0 0px 0 50px;
+}
 
 
 
@@ -296,7 +328,6 @@ p{
     
 
 }
-
 
 .icons ul li{
     height:40px;
@@ -344,12 +375,18 @@ p{
 
 
 /* Lottie Section */
-#lottie{
-    /* padding: 100px; to take up more of screen*/
-        padding: 5% 15% 0% 15%;
-        text-align: left;
+.lottie{
+    /* padding: 100px; to take up more of screen
+    padding: 5% 15% 0% 15%;
+    text-align: left;
+    */
+    color:#000;
+    text-decoration: none;
 
-    }
+}
+.lottie:hover{
+    color:#8cc6dd;
+}
 
 /* Projects Section */
 #projects{
@@ -467,8 +504,20 @@ p{
     #title{
         text-align: center;
     }
+    h1{
+        font-size: 40px; 
+    }
     h2{
-        font-size: 28px;
+        font-size: 22px; 
+    }
+    h3{
+        font-size: 20px; 
+    }
+    h4{
+        font-size: 18px; 
+    }
+    h4{
+        font-size: 18px; 
     }
     p{
         font-size: 15px;
@@ -488,15 +537,10 @@ p{
     .p-footer4{
         font-size: 14px;
     }
+
 }
 
 @media (min-width: 766px){  /* if greater than 766..*/
-    h2{
-        font-size: 34px;
-    }
-    p{
-        font-size: 18px;
-    }
     .nav-bar-link{
         font-size: 18px;
     }
@@ -517,11 +561,12 @@ p{
 /* logo size is bigger when the size is larger than 767px */
 @media(min-width:767px){ 
     .navbar-brand img{
-        width:270px;
-        height: 120px;
-        margin-right: 0;
+        width: 50%;
+        height: 90%;
     }
 }
+
+
 
 @media (max-width:766px){ 
     .navbar-brand img{
@@ -529,7 +574,10 @@ p{
         height: 60px;
         margin-right: 0;
     }
+    
+
 }
+
 
 
 @media (max-width: 1038px){  /* Media Queries allow for webpage to have different looks based on certain conditions */
