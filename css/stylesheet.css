@@ -1,4 +1,8 @@
 /*  general site styles */
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 /*  imported font */
 @font-face {
@@ -484,9 +488,11 @@ p{
  /*Media Query Section -convention is to have all the media queries at the bottom of the page */
 
  @media (max-width: 767px){  /* these conditions  are true only if screen size is <= 767px */
+    /*
     #title{
         text-align: center;
     }
+    */
     h1{
         font-size: 40px; 
     }
@@ -562,18 +568,19 @@ p{
 }
 
 
-
-@media (max-width: 1038px){  /* Media Queries allow for webpage to have different looks based on certain conditions */
+/*
+@media (max-width: 1038px){  
     #title{
         position: relative; top: 0px;
     }
 }
 
-@media (min-width: 767px){  /* if greater than 1038px...*/
+@media (min-width: 767px){  
     #title{
         position: relative; top: -50px;
     }
 }
+*/
 
 
 
