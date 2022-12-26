@@ -1,6 +1,4 @@
-/*  general site styles */
-
-/*  imported font */
+/*  Imported Fonts */
 @font-face {
     font-family:'skywerdregular';
     src: url('font/cloudward-webfont.woff2') format('woff2'),
@@ -9,156 +7,9 @@
     font-style: normal;
 }
 
-.sticky{
-    height: 20rem;
-    width: 9rem;
-    /* left-align the text */
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    flex-grow: 1;
-    flex-basis: 300px;
-    position: sticky;
-    top: 1rem;
-    
-    
-}
-.INSI-motivation-pic{
-    width:90%;
-    height:90%;
-}
-.user-test-imgs{
-    border-radius: 30px;
-}
-
-/* Testimonials Section */
-.carousel-item{
-    padding:6% 15%;
-    width: 70%;
-    text-align: center;
-    background-color: #e7f5f5b2;
-    border-radius: 30px;
-}
-.testimonial-image{
-    width: 20%;
-    border-radius: 50%;
-    margin: 10px;
-    text-align: center;
-}
-
-#press{
-    background-color: #fff;
-    text-align: center;
-}
-
-.press-logo{
-    width: 10%;
-    margin: 20px 20px 50px; /* 20px top, 20px left and right, 50px bottom */
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  filter: invert(1);
-}
-
-#project-title{
-    padding: 2% 15%;
-    text-align: left;
-}
-
-#project-quick-details{
-    padding: 4% 10%;
-    text-align: justify;
-}
-
-#project-details{
-    padding: 4% 15%;
-    text-align: justify;
-}
-#about-1{
-    padding: 0% 15% 4% 15%;
-    text-align: justify;
-    
-}
-#about{
-    padding: 4% 15%;
-    text-align: justify;
-    
-}
-.about-me-pic{
-    width: 100%;
-    height: 100%;
-    text-align: right;
-    
-}
-.about-me-pics{
-    width: 70%;
-    padding: 0% 0% 10% 0%;
-}
-
-.right{
-    text-align: right;
-}
-.left{
-    text-align: left;
-}
-.centered{
-    text-align: center;
-}
-.justify{
-    text-align: justify;
-}
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap'); 
 
-#grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 90px;
-    row-gap: 15px;
-    text-align: left;
-    padding: 0 0% 0% 0%;
-}
-
-#grid2{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 20%;
-    text-align: justify;
-    padding: 8% 3% 3% 3%;
-}
-
-
-
-.insi-title-image{
-    width: 100%;
-    height: 90%;
-    z-index:-5;
-    position: relative;
-}
-.test:hover{
-    text-decoration: none;  
-}
-
-#title{
-    padding: 3% 10% 0 10%;
-    text-align: center;
-    position: relative; top: -60px;
-}
-
-
-#navigation{
-    background-color: #fff;
-    padding: 3% 0% 3% 0%;
-    text-align: center;
-}
-
-/*
-.container-fluid{
-    padding: 3% 15%;
-}
-*/
+/*  General Site Styles */
 
 h1{
     font-family: 'Poppins';
@@ -238,8 +89,30 @@ p{
     letter-spacing: 0.0125em;
 }
 
-/* left aligned Navigation Bar */
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.centered{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
 
+/* Navigation Bar */
+#navigation{
+    background-color: #fff;
+    padding: 3% 0% 3% 0%;
+    text-align: center;
+}
+
+
+/* Different Nav Bars */
+
+/* left aligned Navigation Bar */
 .navbar-header.navbar-right.pull-right {
     margin-right: 15px;
 }
@@ -331,7 +204,6 @@ p{
     background-color: white;
 }
 
-
 .signature{
     transform: rotate(1deg);
 }
@@ -351,13 +223,6 @@ p{
 }
 
 
-
-.card-img-top {
-    object-fit: contain;
-    
-
-}
-
 .icons ul li{
     height:40px;
     width: 40px;
@@ -375,9 +240,19 @@ p{
     color:#8cc6dd;
 }
 
-/* Title Section */
 
-/*  Rollover image styles  */
+
+
+/* Home Page */
+
+/* Hero Section */
+#title{
+    padding: 3% 10% 0 10%;
+    text-align: center;
+    position: relative; top: -60px;
+}
+
+/*  Rollover on Hover Images  */
 .figure {
     position: relative;
     /*width: 360px;  can be omitted for a regular non-lazy image */
@@ -403,37 +278,19 @@ p{
 }
 
 
-/* Lottie Section */
-.lottie{
-    /* padding: 100px; to take up more of screen
-    padding: 5% 15% 0% 15%;
-    text-align: left;
-    */
-    color:#000;
-    text-decoration: none;
-
-}
-.lottie:hover{
-    color:#8cc6dd;
-}
-
 /* Projects Section */
 #projects{
-/* padding: 100px; to take up more of screen*/
     padding: 4% 15%;
     text-align: left;
     background-color: #fff;
     position: relative; top: -60px;
 }
-
-.projects-header{
-   color: #000;
-}
-
+    
 .projects-column{
-   padding: 3% 2%;
+    padding: 3% 2%;
 }
 
+/* Project Cards */
 .card{
     padding: 1em 2em 0.5em;
     border-radius: 15px;
@@ -444,40 +301,204 @@ p{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
+.card-img-top {
+    object-fit: contain;
+}
+
 .card:hover {
     transform: scale(1.1);
     box-shadow: 0 5px 10px #8cc6dd;
 }
 
-.ribbon-wrapper { width: 88px; height: 88px; position: absolute; top: -3px; right: -3px; z-index: 1;}
-.ribbon-tag { text-align: center; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); position: relative; padding: 6px 0px; left: -4px; top: 15px; width: 140px; color: #000000; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); text-shadow: rgba(255,255,255,0.5) 0px 1px 0px; background: #8cc6dd; border-radius: 5px;}
-
-
-.ribbon-tag:before { left: 0;}
-.ribbon-tag:after { right: 0;}
-
-.ribbon-tag-orange { text-align: center; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); position: relative; padding: 6px 0px; left: -4px; top: 15px; width: 140px; color: #000000; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); text-shadow: rgba(255,255,255,0.5) 0px 1px 0px; background: #ffaa79; border-radius: 5px;}
-
-.ribbon-tag-yellow { text-align: center; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); position: relative; padding: 6px 0px; left: -4px; top: 15px; width: 140px; color: #000000; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); text-shadow: rgba(255,255,255,0.5) 0px 1px 0px; background: #f8eda2; border-radius: 5px;}
-
-
-
-
-
-
-
-/*extras
- .card-header{
-    background-color:#fff;
- }
-.card-body{
-    background-color: #fff;
-}
-.card-img-top{
-    background-color: #fff;
+.no-decoration:hover{
+    text-decoration: none;  
 }
 
+/* Ribbons on Project Cards */
+.ribbon-wrapper { 
+    width: 88px;
+    height: 88px; 
+    position: absolute; 
+    top: -3px; 
+    right: -3px;
+    z-index: 1;
+}
+
+.ribbon-tag { 
+    text-align: center; 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    position: relative; 
+    padding: 6px 0px; 
+    left: -4px; 
+    top: 15px; 
+    width: 140px; 
+    color: #000000; 
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px; 
+    background: #8cc6dd; 
+    border-radius: 5px;
+}
+
+.ribbon-tag:before { 
+    left: 0;
+}
+.ribbon-tag:after { 
+    right: 0;
+}
+
+.ribbon-tag-orange { 
+    text-align: center; 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    position: relative; 
+    padding: 6px 0px; 
+    left: -4px; 
+    top: 15px; 
+    width: 140px; 
+    color: #000000; 
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px; 
+    background: #ffaa79; 
+    border-radius: 5px;
+}
+
+.ribbon-tag-yellow { 
+    text-align: center; 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    position: relative; 
+    padding: 6px 0px; 
+    left: -4px; 
+    top: 15px; 
+    width: 140px; 
+    color: #000000; 
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px; 
+    background: #f8eda2; 
+    border-radius: 5px;
+}
+
+
+/* INSI Page */
+
+.insi-title-image{
+    width: 100%;
+    height: 90%;
+    z-index:-5;
+    position: relative;
+}
+
+/*
+#grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 90px;
+    row-gap: 15px;
+    text-align: left;
+    padding: 0 0% 0% 0%;
+}
+
+#grid2{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20%;
+    text-align: justify;
+    padding: 8% 3% 3% 3%;
+}
 */
+
+#project-title{
+    padding: 2% 15%;
+    text-align: left;
+}
+
+#project-quick-details{
+    padding: 4% 10%;
+    text-align: justify;
+}
+
+#project-details{
+    padding: 4% 15%;
+    text-align: justify;
+}
+
+.INSI-motivation-pic{
+    width:90%;
+    height:90%;
+}
+.user-test-imgs{
+    border-radius: 30px;
+}
+
+/* Testimonials Section */
+.carousel-item{
+    padding:6% 15%;
+    width: 70%;
+    text-align: center;
+    background-color: #e7f5f5b2;
+    border-radius: 30px;
+}
+.testimonial-image{
+    width: 20%;
+    border-radius: 50%;
+    margin: 10px;
+    text-align: center;
+}
+
+#press{
+    background-color: #fff;
+    text-align: center;
+}
+
+.press-logo{
+    width: 10%;
+    margin: 20px 20px 50px; /* 20px top, 20px left and right, 50px bottom */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+
+
+/* About Page */
+#about-1{
+    padding: 0% 15% 4% 15%;
+    text-align: justify;
+    
+}
+
+#about{
+    padding: 4% 15%;
+    text-align: justify;
+    
+}
+.about-me-pic{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    
+}
+.about-me-pics{
+    width: 70%;
+    padding: 0% 0% 10% 0%;
+}
+
+
 
 /* Footer Section*/
 #footer{
@@ -491,18 +512,6 @@ p{
     width: 20px;
     padding: 0 0 5px 0;
 }
-
-/*
-.emph{
-    font-family: 'Helvetica Neue';
-    font-weight: bold;
-    color:#000;
-    font-size: 18px;
-}
-.emph:hover{
-    font-size: 30px;
-}
-*/
 
 .social-icons{
     margin: 20px 2.5px;
@@ -542,7 +551,7 @@ p{
 }
 
 
- /*Media Query Section -convention is to have all the media queries at the bottom of the page */
+ /*Media Query Section */
 
  @media (max-width: 767px){  /* these conditions  are true only if screen size is <= 767px */
     #title{
@@ -626,7 +635,7 @@ p{
 }
 
 
-/*
+/* Hover on Mobile Phone
 @media (max-width: 1038px){  /* if less than 1038px...
     #title{
         position: relative; top: 0px;
@@ -668,3 +677,4 @@ p{
 
 }
 */
+
