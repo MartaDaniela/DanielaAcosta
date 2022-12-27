@@ -567,6 +567,26 @@ p{
 
 }
 
+/* INSI Page 2 */
+
+.icon-spacing{
+    padding: 2px 10px;
+}
+.icon-spacing:hover{
+    text-decoration: none;
+}
+.footer{
+    margin-right: auto;
+    margin-left: auto;
+}
+.header{
+    margin-right: auto;
+    margin-left: auto;
+}
+.black-color{
+    color: #000;
+}
+
 
 /*
 @media (max-width: 1038px){  
