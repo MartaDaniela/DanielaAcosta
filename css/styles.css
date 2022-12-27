@@ -111,26 +111,28 @@ p{
 /* Navigation Bar */
 #navigation{
     /* change top and bottom padding to 3% with 4 links navbar */
-    padding: 2% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
     /*text-align: center;*/
 }
 
 .container{
-    padding: 0% 0%;
+    padding: 3% 2%;
 }
 
 
 /* Different Nav Bars */
 
-/* left aligned Navigation Bar 
+/* left aligned Navigation Bar /*
 .navbar-header.navbar-right.pull-right {
     margin-right: 15px;
-}
+
 */
-  
+/*
 .navbar-right > li {
     float: left;
 }
+*/
+
 .nav-bar-link{
     padding:10px 10px 10px 10px;
     color:#000;
@@ -150,6 +152,7 @@ p{
     /*font-size: 22px;*/
     /*letter-spacing: 0.05em;*/
 }
+/*
 .navbar-brand2 img{
     transform: rotate(1deg);
     text-align: left;
@@ -157,6 +160,7 @@ p{
     height:50%;
 
 }
+*/
 
 
 /* Centered Navigation Bar 
@@ -169,7 +173,7 @@ p{
     padding: 0 0px 0 70px;
 }
 */
-
+/*
 .nav-link{
     padding:10px 10px 10px 5px;
     color:#000;
@@ -188,7 +192,7 @@ p{
 
 .nav-link:hover{
     padding:10px 5px 10px 5px;
-    /*background-color: #8cc6dd;*/
+    /*background-color: #8cc6dd;
     border-radius: 10px;
     color:#000;
     text-decoration: none;
@@ -196,6 +200,8 @@ p{
     font-size: 22px;
     letter-spacing: 0.05em;
 }
+*/
+
 .centered{
     margin-left: auto;
     margin-right: auto;
@@ -206,14 +212,17 @@ p{
 .navbar-brand img{
     transform: rotate(1deg);
     padding: 0px 0px 0px 0px;
-    width: 20%;
-    height: 20%;
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
 
 }
 
+/*
 .navbar-brand-img{
     transform: rotate(1deg);
 }
+*/
 
 .navbar-toggler{
     color: black;
@@ -659,37 +668,36 @@ p{
     }
     */
     .icons{
-        top: 30%;
+        top: 35%;
         right: 10px;
         transform: translateY(-50%);
         position: fixed;
         z-index: 100;
     }
+    /*
     .padding{
         padding: 0% 10%;
     }
+    */
     .smaller-text{
-        font-size: 15px;
+        font-size: 16px;
     }
-    /*
-    .navbar-brand img{
-        width: 160px;
-        height: 70px;
-        margin-right: 0;
-    }*/
+    
 
 
 }
 
 @media (min-width:601px){ 
+    /*
     .navbar-brand img{
         /*
         width:220px;
         height: 100px;
-        */
+        
         margin-right: 0;
     }
-    /*
+    
+    
     #navigation{
         padding: 0% 0%;
     }
