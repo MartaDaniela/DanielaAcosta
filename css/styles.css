@@ -139,7 +139,7 @@ p{
 
 .nav-bar-link:hover{
     /*padding:10px 5px 10px 5px;*/
-    background-color: #8cc6dd83;
+    background-color: rgba(193, 165, 144, 0.34);
     border-radius: 10px;
     color:#000;
     text-decoration: none;
@@ -201,7 +201,7 @@ p{
 
 .navbar-brand img{
     transform: rotate(1deg);
-    text-align: center;
+    padding: 0px 0px 0px 10px;
 
 }
 .navbar-brand-img{
@@ -240,7 +240,7 @@ p{
     margin-top: 5px;
     border-radius: 2.5px;
     color:#fff;
-    background: #000;
+    background: rgb(193, 165, 144);
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 
 }
@@ -319,7 +319,7 @@ p{
 
 .card:hover {
     transform: scale(1.1);
-    box-shadow: 0 5px 10px #8cc6dd83;
+    box-shadow: 0 5px 10px rgb(193, 165, 144);
 }
 
 .no-decoration:hover{
@@ -559,14 +559,15 @@ p{
     text-decoration: none;
 }
 .p-footer2:hover{
-    color:#8cc6dd;
+    color: rgb(193, 165, 144);
     text-decoration: none;
 }
 
 
  /*Media Query Section */
 
- @media (max-width: 600px){  /* these conditions are true only if screen size is <= 767px */
+ /*
+ @media (max-width: 600px){  /* these conditions are true only if screen size is <= 767px 
     #title{
         text-align: center;
     }
@@ -605,8 +606,10 @@ p{
     }
 
 }
+*/
 
-@media (min-width: 601px){  /* if greater than 766..*/
+/*
+@media (min-width: 601px){  /* if greater than 766..
     .nav-bar-link{
         font-size: 18px;
     }
@@ -623,32 +626,29 @@ p{
         font-size: 16px;
     }
 }
+*/
 
 /* Home Page Responsiveness */ 
 @media (max-width:600px){ 
+    #title{
+        text-align: center;
+    }
     .navbar-brand img{
-        padding: 0px 0px 0px 10px;
-        width:135px;
-        height: 60px;
+        width: 190px;
+        height: 80px;
         margin-right: 0;
     }
     #title{
         position: relative; top: 0px;
+        padding: 12% 0% 12% 0%;
     }
-    .icons ul li{
-        height: 30px;
-        width: 30px;
-        list-style-type: none;
-        padding-top: 0px;
-        padding: 2px 0 0px 0;
-        margin-top: 5px;
-        border-radius: 2.5px;
-        color:#fff;
-        background: #000;
-        box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    
+    #navigation{
+        padding: 20px 0px 0px 0px;
     }
-    
+    .padding{
+        padding: 0% 10%;
+    }
+
 
 }
 
@@ -659,7 +659,7 @@ p{
         margin-right: 0;
     }
     #navigation{
-        padding: 0% 0%
+        padding: 0% 0%;
     }
     #title{
         position: relative; top: 0px;
@@ -670,7 +670,7 @@ p{
 
 @media (min-width:700px){ 
     #navigation{
-        padding: 0% 0%
+        padding: 0% 0%;
     }
     #title{
         position: relative; top: 0px;
@@ -681,7 +681,7 @@ p{
 
 @media (min-width:767px){ 
     #navigation{
-        padding: 0% 0%
+        padding: 0% 0%;
     }
     #title{
 
@@ -693,7 +693,7 @@ p{
 
 @media (min-width:900px){ 
     #navigation{
-        padding: 0% 0%
+        padding: 0% 0%;
     }
     #title{
 
@@ -705,7 +705,7 @@ p{
 
 @media (min-width:1100px){ 
     #navigation{
-        padding: 0% 0%
+        padding: 0% 0%;
     }
     #title{
         position: relative; top: -20px;
