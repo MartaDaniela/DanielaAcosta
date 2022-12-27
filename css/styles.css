@@ -114,6 +114,7 @@ p{
     padding: 0% 0% 0% 0%;
     /*text-align: center;*/
 }
+
 .container{
     padding: 0% 0%;
 }
@@ -139,7 +140,7 @@ p{
 
 .nav-bar-link:hover{
     /*padding:10px 5px 10px 5px;*/
-    background-color: rgba(193, 165, 144, 0.34);
+    background-color: #93d59845;
     border-radius: 10px;
     color:#000;
     text-decoration: none;
@@ -240,7 +241,7 @@ p{
     margin-top: 5px;
     border-radius: 2.5px;
     color:#fff;
-    background: rgb(193, 165, 144);
+    background: #93d598; /* brown color- #bf9e8b; */
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 
 }
@@ -289,6 +290,17 @@ p{
     background-color: white;
 }
 
+.down-arrow{
+    text-decoration: none;
+    color:black;
+}
+
+.down-arrow:hover{
+    text-decoration: none;
+    color: #93d598;
+}
+
+
 
 /* Projects Section */
 #projects{
@@ -319,7 +331,7 @@ p{
 
 .card:hover {
     transform: scale(1.1);
-    box-shadow: 0 5px 10px rgb(193, 165, 144);
+    /*box-shadow: 0 5px 10px /*color here;*/
 }
 
 .no-decoration:hover{
@@ -559,7 +571,7 @@ p{
     text-decoration: none;
 }
 .p-footer2:hover{
-    color: rgb(193, 165, 144);
+    color: #93d598;
     text-decoration: none;
 }
 
