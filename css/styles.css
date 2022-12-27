@@ -674,13 +674,11 @@ p{
         position: fixed;
         z-index: 100;
     }
-    /*
     .padding{
         padding: 0% 10%;
     }
-    */
     .smaller-text{
-        font-size: 16px;
+        font-size: 15px;
     }
     
 
@@ -770,7 +768,7 @@ p{
     */
     #title{
         text-align: center;
-        position: relative; top:  20px;
+        position: relative; top:  -40px;
     }
     
 
