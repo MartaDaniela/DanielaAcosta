@@ -13,6 +13,8 @@
 html {
     scroll-behavior: smooth;
   }
+
+
   
 
 h1{
@@ -108,10 +110,12 @@ p{
 
 /* Navigation Bar */
 #navigation{
-    background-color: #fff;
     /* change top and bottom padding to 3% with 4 links navbar */
     padding: 0% 0% 0% 0%;
     /*text-align: center;*/
+}
+.container{
+    padding: 0% 0%;
 }
 
 
@@ -241,9 +245,11 @@ p{
 
 }
 
+/*
 .icons ul li:hover{
     color:#8cc6dd;
 }
+*/
 
 
 
@@ -635,7 +641,8 @@ p{
         margin-right: 0;
     }
     #title{
-        padding: 15% 10% 0% 10%;
+        padding: 0% 10% 0% 10%;
+        position: relative; top: 0px;
     }
     
 
@@ -668,6 +675,20 @@ p{
     
 
 }
+
+@media (min-width:900px){ 
+    #navigation{
+        padding: 1% 0% 3% 0%;
+    }
+    #title{
+        padding: 0% 10% 0% 10%;
+        text-align: center;
+        position: relative; top: -60px;
+    }
+    
+
+}
+
 
 
 /* Hover on Mobile Phone
