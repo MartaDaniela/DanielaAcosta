@@ -533,7 +533,7 @@ p{
 .about-me-pic{
     width: 100%;
     height: 100%;
-    text-align: right;
+    text-align: center;
     
 }
 .about-me-pics{
@@ -677,17 +677,14 @@ p{
     .smaller-text{
         font-size: 15px;
     }
-    .shrink{
-        width:100%;
-        height:90%;
-
-    }
+    /*
     #about-1{
         text-align: left;
     }
     #about{
         text-align: left;
     }
+    */
 
 }
 
