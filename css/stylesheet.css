@@ -586,6 +586,9 @@ p{
 .black-color{
     color: #000;
 }
+.black-color:hover{
+    color: #e9c9a0ca;
+}
 
 
 /*

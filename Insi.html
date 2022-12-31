@@ -77,39 +77,29 @@
   -->
     <section id="navigation">
       <!-- NavBar -->
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbar10">
-                <ul class="navbar-nav nav-fill w-100">
-                    <li class="nav-item">
-                        <a style="color:black" class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color:black" class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color:black" class="nav-link" href="index.html#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color:black" class="nav-link" href="files/Acosta-Resume.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+          <div class="navbar-header navbar-left pull-left">
+            <a href="index.html" class="navbar-brand"><img src="images/vase logo plain.png"></a>   
+          </div>
+
+          <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="about.html" class="nav-bar-link">About</a><a href="files/Acosta-Resume.pdf" target="_blank" class="nav-bar-link">Resume</a></li>
+            </ul>
+          </div>
       </nav>
 
-        <!-- Floating contact/social Icons -->
+        <!-- Floating contact/social Icons 
         <div class="icons">
           <ul>
-            <!-- <a href="files/Acosta-Resume.pdf" title="Resume" target="_blank"><li><i class="fa-solid fa-file fa-lg"></i></li></a> -->
+            <a href="files/Acosta-Resume.pdf" title="Resume" target="_blank"><li><i class="fa-solid fa-file fa-lg"></i></li></a> 
             <a href="mailto:mdacosta@ucsd.edu"><li class="email"><i class="fa-solid fa-envelope fa-lg"></i></li></a>
             <a href="https://www.linkedin.com/in/martadanielaacosta/" target="_blank"><li><i class="fab fa-linkedin fa-xl"></i></li></a>
             <a href="https://github.com/MartaDaniela?tab=repositories" target="_blank"><li><i class="fa-brands fa-github fa-xl"></i></li></a>
           </ul>
         </div>
+      -->
 
     </section>
         
@@ -121,8 +111,9 @@
       <img src="images/INSI-imgs/InsiLargeMockup.png" class="insi-title-image">
 
       
-      
-      <section id="project-quick-details">
+      <main>
+        <article class="article">
+        <section id="project-quick-details">
         <h4>Introduction</h4>
         <div class="left"><h3>INSI utilizes user <strong>insights</strong> to quickly recommend and take UCSD students <strong>inside</strong> their perfect study spaces.</h3></div>
         
@@ -535,6 +526,45 @@
 
 
       </section>
+
+
+          <!-- Side Navigation-->
+  </article>
+  <aside class="sidebar">
+    <div class="component"> 
+      <div class="header"><p>
+        <i class="fa-solid fa-list-ul"></i> On this page</p>
+      </div>
+      <div class="content">
+        <div class="empty-text">
+            <a href=""><p>Intro</p></a>
+            <a href=""><p>Goal</p></a>
+            <a href=""><p>Project Scope</p></a>
+            <a href=""><p>My Role</p></a>
+            <a href=""><p>Key Contributions</p></a>
+            <a href=""><p>Motivation</p></a>
+            <a href=""><p>Problem</p></a>
+            <a href=""><p>Our Solution</p></a>
+            <a href=""><p>Our Process</p></a>
+            <a href=""><p>1. Empathize</p></a>
+            <a href=""><p>2. Define</p></a>
+            <a href=""><p>3. Ideate</p></a>
+            <a href=""><p>4. Lo-fi Prototype</p></a>
+            <a href=""><p>4.1 User Testing Round 1</p></a>
+            <a href=""><p>5. Hi-fi Prototype</p></a>
+            <a href=""><p>5.1 User Testing Round 2</p></a>
+            <a href=""><p>Next Steps</p></a>
+        </div>
+      </div>
+      <div class="footer">
+        <a class="icon-spacing" href="mailto:mdacosta@ucsd.edu"><i class="fa-solid fa-envelope fa-lg black-color"></i></a>
+        <a class="icon-spacing" href="https://www.linkedin.com/in/martadanielaacosta/" target="_blank"><i class="fab fa-linkedin fa-lg black-color"></i>
+        <a class="icon-spacing" href="https://github.com/MartaDaniela?tab=repositories" target="_blank"><i class="fa-brands fa-github fa-lg black-color"></i></a>
+      </div>
+    </div>
+  </aside>
+
+</main>
 
 
     <footer id="footer" class="text-center text-lg-start">
