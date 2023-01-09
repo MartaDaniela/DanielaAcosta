@@ -820,3 +820,174 @@ main {
 }
 */
 
+/* Side Nav Bar */ 
+.icon-spacing{
+    padding: 2px 10px;
+}
+.icon-spacing:hover{
+    text-decoration: none;
+}
+.footer{
+    margin-right: auto;
+    margin-left: auto;
+}
+.header{
+    margin-right: auto;
+    margin-left: auto;
+}
+.black-color{
+    color: #000;
+}
+.black-color:hover{
+    color: #e9c9a0ca;
+}
+
+:root {
+    --space: 2rem;
+    --space-xs: calc(var(--space) / 3);
+    --space-sm: calc(var(--space) / 2);
+    --space-md: calc(var(--space) * 2);
+  
+    --color-primary: lightgray;
+    --color-accent: whitesmoke;
+    --color-dark: black;
+    --color-mid: gray;
+    --color-light: white;
+    --color-highlight: dodgerblue;
+  
+    --radius: 0.125rem;
+  }
+  
+  /* Here are the base styles for the main layout and sticky component */
+  * {
+    box-sizing: border-box;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .article {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 40%;
+  }
+  
+  .sidebar {
+    --offset: var(--space);
+    flex-grow: 1;
+    flex-basis: 200px;
+    align-self: start;
+    position: sticky;
+    top: var(--offset);
+  }
+  
+  .component {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  .component .content {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .sidebar .component {
+    max-height: calc(100vh - var(--offset) * 2);
+  }
+  
+  /*
+   * Other styles
+  **/
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+
+  
+  [hidden] {
+    display: none;
+  }
+  
+  body {
+    margin: 0 auto;
+    padding: 0 var(--space);
+    max-width: 1400px;
+  }
+
+  
+  
+  /* Until flexbox gap is supported in all modern browsers, we use the negative margin trick to create space between the children elements */
+  main {
+    margin-bottom: calc(var(--space-md) * -1);
+    margin-left: calc(var(--space-md) * -1);
+  }
+  
+  main > * {
+    margin-bottom: var(--space-md);
+    margin-left: var(--space-md);
+  }
+  
+  article > * + * {
+    margin-top: var(--space);
+  }
+  
+  .component {
+    position: relative;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04),
+      0 4px 8px rgba(0, 0, 0, 0.03), 0 8px 16px rgba(0, 0, 0, 0.03),
+      0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02);
+  }
+  
+  .component .header,
+  .component .footer {
+    padding: var(--space-sm);
+    text-align: left;
+  }
+  
+  .component .header {
+    border-bottom: inherit;
+  }
+  
+  .component .footer {
+    /*
+    display: flex;
+    justify-content: space-between; */
+    border-top: inherit;
+  }
+  
+  .component .content {
+    padding: var(--space-sm);
+    max-height: 500px;
+    overflow-y: auto;
+    color: var(--color-dark);
+  }
+  
+  .empty-text {
+    text-align: left;
+  }
+  
+  
+  
+  
+  .button {
+    appearance: none;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 1rem;
+    color: white;
+    background-color: var(--color-light);
+    border: 1px solid var(--color-mid);
+    cursor: pointer;
+    border-radius: var(--radius);
+    box-shadow: rgba(black, 0.1) 4px 4px;
+  }
+
+  
