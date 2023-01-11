@@ -9,13 +9,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap'); 
 
+
 /*  General Site Styles */
 html {
     scroll-behavior: smooth;
-  }
-
-
-  
+  } 
 
 h1{
     font-family: 'Poppins';
@@ -95,6 +93,9 @@ p{
     letter-spacing: 0.0125em;
 }
 
+.no-space{
+    padding: 0 0;
+}
 .right{
     text-align: right;
 }
@@ -338,6 +339,16 @@ p{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
+.card-WIP{
+    padding: 1em 2em 0.5em;
+    border-radius: 15px;
+    font-family: 'Swis721 BT';
+         /* for reg black- rgba(0,0,0,.2) */
+    background-color:rgb(229, 228, 228);
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
 .card-img-top {
     object-fit: contain;
 }
@@ -453,49 +464,135 @@ p{
 }
 
 
+.ribbon-tag-grey { 
+    text-align: center; 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    position: relative; 
+    padding: 6px 0px; 
+    left: -4px; 
+    top: 15px; 
+    width: 140px; 
+    color: #000000; 
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3); 
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px; 
+    background: #9fa39f; 
+    border-radius: 5px;
+}
+
+
 
 
 /* INSI Page */
 
 .insi-title-image{
     width: 100%;
-    height: 90%;
-    z-index:-5;
-    position: relative;
+    height: 100%;
+    
+    /* z-index:-5;
+    position: relative; */
 }
 
-/*
-#grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 90px;
-    row-gap: 15px;
-    text-align: left;
-    padding: 0 0% 0% 0%;
-}
-
-#grid2{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 20%;
-    text-align: justify;
-    padding: 8% 3% 3% 3%;
-}
-*/
-
+/* INSI page sections */
 #project-title{
-    padding: 2% 15%;
+    padding: 0% 10%;
     text-align: left;
-}
-
-#project-quick-details{
-    padding: 4% 10%;
-    text-align: justify;
 }
 
 #project-details{
-    padding: 4% 15%;
-    text-align: justify;
+    padding: 0% 10% 4% 11%;
+    text-align: left;
+}
+
+#intro{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#motivation{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#problem{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+    margin: 0px;
+}
+
+#our-solution{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+.bottom-padding{
+    padding: 4% 0% 10% 0%;
+}
+.side-padding{
+    padding: 0% 10% 0% 10%;
+}
+
+#our-process{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#empathize{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#define{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#ideate{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+.side-padding2{
+    padding: 0% 5% 0% 2%;
+}
+
+#lofi-prototype{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#lofi-testing{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+.move-up{
+    position: relative; top: -20px;
+}
+#hifi-prototype{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#hifi-testing{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#reflection{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#wishes{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
+}
+
+#other-projects{
+    padding: 0% 2% 6% 11%;
+    text-align: left;
 }
 
 .INSI-motivation-pic{
@@ -509,7 +606,7 @@ p{
 /* Testimonials Section */
 .carousel-item{
     padding:6% 15%;
-    width: 70%;
+    width: 100%;
     text-align: center;
     background-color: #e7f5f5b2;
     border-radius: 30px;
@@ -587,6 +684,8 @@ main {
   .empty-text {
     text-align: left;
   }
+
+
 
 /* About Page */
 
@@ -767,7 +866,7 @@ main {
     */
     #title{
         text-align: center;
-        position: relative; top:  -40px;
+        position: relative; top:  -20px;
     }
 
 
@@ -849,12 +948,6 @@ main {
     --space-md: calc(var(--space) * 2);
   
     --color-primary: lightgray;
-    --color-accent: whitesmoke;
-    --color-dark: black;
-    --color-mid: gray;
-    --color-light: white;
-    --color-highlight: dodgerblue;
-  
     --radius: 0.125rem;
   }
   
@@ -877,7 +970,8 @@ main {
   .sidebar {
     --offset: var(--space);
     flex-grow: 1;
-    flex-basis: 200px;
+    /* Changes sidebar width */
+    flex-basis: 175px;
     align-self: start;
     position: sticky;
     top: var(--offset);
@@ -966,16 +1060,11 @@ main {
   
   .component .content {
     padding: var(--space-sm);
-    max-height: 500px;
+    /* Changes sidebar height */
+    max-height: 275px;
     overflow-y: auto;
     color: var(--color-dark);
   }
-  
-  .empty-text {
-    text-align: left;
-  }
-  
-  
   
   
   .button {
